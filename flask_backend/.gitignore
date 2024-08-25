@@ -1,0 +1,13 @@
+# Flask node_modules
+node_modules/
+
+# Ignore local environment files
+.env
+
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+
