@@ -1,7 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const router = express.Router();
-const Stripe = require('stripe')(process.env.REACT_APP_PRIVATE_KEY);
+const Stripe = require('stripe')('sk_test_51P4n8CSFPT5T34uN4WmuyaH7nCPFIPxXDMJeYFwBIQtBDBLyAykK612fUpFgj5Zk8TUiz7u9FVLxEl9RRRG4L8TQ00IgB64NPB');
 
 router.post('/stripe', async (req, res) => {
   const data = req.body;
@@ -26,9 +26,8 @@ router.post('/stripe', async (req, res) => {
       payment_method_types: ['card'],
       mode: 'payment',
       line_items: lineItems,
-      success_url: 'https://give4-goods.vercel.app/products',
-      // success_url: 'http://localhost:3000/products',
-      cancel_url: 'https://give4-goods.vercel.app/cart',
+      success_url: 'http://localhost:3000/products',
+      cancel_url: 'http://localhost:3000/cart',
     });
 
     res.json({ url: session.url, success: true });
