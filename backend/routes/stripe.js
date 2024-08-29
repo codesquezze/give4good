@@ -1,7 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const router = express.Router();
-const Stripe = require('stripe')('sk_test_51P4n8CSFPT5T34uN4WmuyaH7nCPFIPxXDMJeYFwBIQtBDBLyAykK612fUpFgj5Zk8TUiz7u9FVLxEl9RRRG4L8TQ00IgB64NPB');
+const Stripe = require('stripe')('sk_test_51PtChqSIigdymEC4koTPvByY00k4kwunp8kLE0PPOPqfCTybYR6xG4etu4Gjw7Zw7gtFxWJ2pCP0iKnrq1AtmS0r00sHvN1Dg2');
 
 router.post('/stripe', async (req, res) => {
   const data = req.body;
