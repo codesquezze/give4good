@@ -18,12 +18,9 @@ Through our platform, we support individuals and families in need, NGOs, and loc
 Join us on our mission to make a difference. Whether you choose to buy, donate, or both, every action counts. Together, we can build a more sustainable and compassionate world.
 
 ## Our Team
-
+- Sahil Kumar
+- Krishna Chandra Roy
 - Aman Kumar
-- Abhishek Porwal
-- Abhinav Pandey
-- Pratyush Ghatole
-
 
 ## Technologies Used
 
